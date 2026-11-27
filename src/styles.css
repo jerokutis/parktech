@@ -43,3 +43,25 @@ html,body,#root{height:100%;margin:0}
 .admin-list-empty>svg{color:#6c8ca9;margin-bottom:12px}
 .admin-list-empty p{font-size:14px;font-weight:600}
 .admin-list-empty>span{display:block;font-size:12px;margin-top:7px}
+
+/* Separate administration views from the student's personal parking flow. */
+.admin-context{font-size:13px;line-height:1.7;color:#526c82;margin-bottom:18px}
+.admin-overview-stats{display:flex;gap:12px;padding:18px 12px;background:#edf4fb;border:1px solid #dce7f1;border-radius:13px;margin-bottom:18px}
+.admin-overview-stats>div{flex:1;text-align:center}.admin-overview-stats>div+div{border-left:1px solid #cfdfed}
+.admin-overview-stats strong{display:block;font-family:'Manrope',sans-serif;font-size:28px;color:var(--navy)}
+.admin-overview-stats span{display:block;font-size:13px;color:#486888;margin-top:4px}
+.admin-overview-filters{display:flex;gap:6px;margin:0 0 18px}
+.admin-overview-filters button{flex:1;min-height:44px;padding:8px 5px;font-size:13px;border:1px solid #dce6ef;border-radius:10px;color:#526c82;background:#f6f9fc}
+.admin-overview-filters button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:white;font-weight:600}
+.admin-records{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.admin-records>li{padding:16px 13px;border:1px solid #e0e8ef;border-radius:12px;background:white}
+.admin-record-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.admin-record-top>strong{font-size:16px;letter-spacing:.5px;color:#244b6c}
+.admin-records p{font-size:13px;line-height:1.7;color:#526c82}
+.admin-record-date,.admin-record-top time{font-size:12px;line-height:1.7;color:#60778a}
+.admin-record-date{margin-top:7px}
+.admin-booking-status,.activity-role{font-size:12px;line-height:1.5;padding:5px 8px;border-radius:7px;font-weight:600;background:#edf2f7;color:#526c82}
+.admin-booking-status.reserved{background:#e6effb;color:#32679e}.admin-booking-status.parking{background:#e5f5eb;color:#287449}
+.admin-booking-status.completed{background:#edf4ef;color:#426e53}.admin-booking-status.cancelled{background:#f4efef;color:#825b5b}
+.activity-role.admin{background:#e6effb;color:var(--navy)}.activity-role.student{background:#e5f5eb;color:#287449}
+.activity-message{display:block;font-size:14px;line-height:1.7;color:#244b6c;margin-bottom:6px}

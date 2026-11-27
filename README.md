@@ -63,7 +63,14 @@ Telefone atidaryk **Paskyra → Administratoriaus režimas**, tada grįžk į **
 
 Galimos vietos būsenos: laisva, užimta, rezervuota arba neprieinama. Mygtukas **Pridėti parkavimo vietą** sukuria papildomą laisvą vietą. Prototipo limitas – 36 vietos vienoje aikštelėje.
 
-Grįžti gali per **Paskyra → Pereiti į studento režimą**.
+Administratoriaus navigacija atskira:
+
+- **Vietos** – aikštelių planas, vietų sąrašas ir būsenų keitimas.
+- **Rezervacijos** – prototipe išsaugotų rezervacijų apžvalga pagal būseną, su automobilio numeriu ir aikštele. Administratorius neatlieka naudotojo parkavimo veiksmų.
+- **Žurnalas** – nauji rezervavimo, parkavimo ir administravimo veiksmai su data bei veiksmo atlikėjo vaidmeniu. Žurnalas pildomas nuo šios versijos ir išsaugomas `localStorage`; ankstesnės rezervacijos išlieka.
+- **Valdymas** – administratoriaus nustatymai ir grįžimas į studento režimą.
+
+Perjungus režimą atveriamas jo pradinis ekranas ir uždaromi ankstesnio režimo dialogai. Administratoriaus paskyroje nerodomas studento automobilis ar asmeninių duomenų redagavimas. Grįžti gali per **Valdymas → Pereiti į studento režimą**. Studentui išlieka jo rezervacija ir asmeninė istorija.
 
 ### Užimtumo simuliacija
 

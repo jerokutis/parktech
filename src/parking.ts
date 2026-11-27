@@ -6,6 +6,32 @@ export type Spot = {
   type: 'regular' | 'ev' | 'accessible';
 };
 
+export type Booking = {
+  id: string;
+  lot: number;
+  spot: string;
+  plate: string;
+  created: number;
+  duration: number;
+  started?: number;
+  ended?: number;
+  status: 'reserved' | 'parking' | 'completed' | 'cancelled';
+};
+
+export type Activity = {
+  id: string;
+  at: number;
+  role: 'student' | 'admin' | 'system';
+  message: string;
+  lot: number;
+  spot: string;
+  plate?: string;
+};
+
+export function recordActivity(events: Activity[], event: Omit<Activity, 'id' | 'at'>): Activity[] {
+  return [{ ...event, id: crypto.randomUUID(), at: Date.now() }, ...events];
+}
+
 export const statusNames: Record<Status, string> = {
   free: 'Laisva',
   occupied: 'Užimta',
