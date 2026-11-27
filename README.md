@@ -12,7 +12,7 @@
 - Parkavimo pradžios ir pabaigos žymėjimas bei veikiantis trukmės laikmatis.
 - Rezervacijų istorija su baigtų ir atšauktų rezervacijų filtrais.
 - Paskyros vardo ir automobilio numerio keitimas.
-- Administratoriaus režimas: vietų būsenų keitimas ir naujų vietų pridėjimas.
+- Administratoriaus režimas: atskiras vietų sąrašas, būsenų keitimas ir naujų vietų pridėjimas.
 - Įjungiama užimtumo simuliacija ir pradinių demonstracinių duomenų atkūrimas.
 
 ## Technologijos
@@ -59,7 +59,9 @@ Terminalą palik veikiantį, kol naudoji programėlę. Serverį sustabdysi paspa
 
 ### Administratoriaus režimas
 
-Telefone atidaryk **Paskyra → Administratoriaus režimas**, tada grįžk į **Aikšteles**. Paspaudęs vietą galėsi pakeisti jos būseną: laisva, užimta, rezervuota arba neprieinama. Mygtukas **Pridėti parkavimo vietą** sukuria papildomą laisvą vietą. Prototipo limitas – 36 vietos vienoje aikštelėje.
+Telefone atidaryk **Paskyra → Administratoriaus režimas**, tada grįžk į **Aikšteles**. Atsidarys **Sąrašas** su kiekvienos vietos numeriu, būsena ir tipu. Mygtuku **Keisti** atidarysi būsenos pasirinkimą. Jungikliu **Sąrašas / Planas** gali grįžti į aikštelės planą. Abu vaizdai naudoja tuos pačius duomenis ir filtrus. Aktyvi rezervacija sąraše pažymėta spynos simboliu, o jos keitimo mygtukas išjungtas.
+
+Galimos vietos būsenos: laisva, užimta, rezervuota arba neprieinama. Mygtukas **Pridėti parkavimo vietą** sukuria papildomą laisvą vietą. Prototipo limitas – 36 vietos vienoje aikštelėje.
 
 Grįžti gali per **Paskyra → Pereiti į studento režimą**.
 
